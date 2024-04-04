@@ -472,8 +472,95 @@ text-align: initial;
   color: white;
   background: black;
 }
+.download button:hover{
+  
+  color: white;
+  background: rgba(0, 0, 0, 0.568);
+}
+/* ------------------------footer css--------------------- */
+.footer{
+  background-color: #1f1f1f;
+  color: white;
+  margin-top: 30px;
+}
+.last-info{
+ 
+  display: flex;
+ justify-content: space-between;
+ height: 300px;
+ align-items: center;
+ margin-left: 60px;
+  margin-right: 60px;
+}
+.last-cont h4{
+  font-size: 40px;
+  color: green;
+}
 
-/* =========== media quary ===============  */
+#shop{
+  color: green;
+  
+}
+
+.last-cont p{
+  color: white;
+  margin-top: 25px;
+font-size: 19px;
+margin-left: 30px;
+cursor: pointer;
+}
+.last-cont h4:hover{
+  color: rgba(9, 220, 9, 0.826);
+}
+.vist {
+  height: 32px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.vist i{
+  border: 2px solid #ffffff96;
+  width: 33px;
+  border-radius: 15px;
+  text-align: center;
+}
+.vist i:hover{
+  border: 2px solid white;
+ box-shadow: 5px 5px 10px grey;
+}
+
+.navigation{
+  gap: 135px;
+  display: flex;
+}
+.navigation ul{
+  font-size: 20px;
+ 
+}
+.navigation ul li{
+  
+  list-style: none;
+}
+.navigation ul li a{
+ 
+  line-height: 1.6;
+  color: white;
+text-decoration: none;
+
+
+}
+.navigation ul li  a span{
+  font-size: 28px;
+line-height: 1.7;
+}
+.navigation ul li a:hover{
+  text-decoration: underline;
+}
+
+/* ===========rgba(0, 0, 0, 0.493)a quary ===============  */
 
 @media (min-width:1024px) and (max-width:1250px){
     .background {
@@ -583,6 +670,14 @@ text-align: initial;
         margin-top: 50px;
         padding-top: 10px;
       }
+      .navigation {
+        gap: 70px;
+        display: flex;
+      }
+      .vist{
+margin-left: 0px;
+      }
+
 }
 
 @media (min-width:768px) and (max-width:1024px){
@@ -799,6 +894,52 @@ input{
   .download{
     margin-top: 15px;
   }
+  .last-info {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .last-cont h4 {
+    font-size: 40px;
+    padding-top: 15px;
+  }
+  .last-cont p {
+    margin-top: 0px;
+    font-size: 19px;
+  }
+  .vist {
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 27px;
+  }
+  .vist i {
+    border: 2px solid #ffffff96;
+    width: 35px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 27px;
+  }
+  .navigation ul {
+    font-size: 13px;
+  }
+  .navigation ul li {
+    list-style: disc;
+  }
+  .navigation ul li a span {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  .navigation {
+    gap: 100px;
+    display: flex;
+  }
 }
 @media (min-width:481px) and (max-width:768px) {
     .background{
@@ -1012,7 +1153,52 @@ input{
       .download{
         margin-top: 15px;
       }
-}
+      .last-info {
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        align-items: center;
+        flex-direction: column;
+      }
+      .last-cont h4 {
+        font-size: 30px;
+        padding-top: 15px;
+      }
+      .last-cont p {
+        margin-top: 0px;
+        font-size: 19px;
+      }
+      .vist {
+        height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .vist i {
+        border: 2px solid #ffffff96;
+        width: 27px;
+        border-radius: 15px;
+        text-align: center;
+      }
+      .navigation ul {
+        font-size: 13px;
+      }
+      .navigation ul li {
+        list-style: disc;
+      }
+      .navigation ul li a span {
+        font-size: 20px;
+        line-height: 1.7;
+      }
+      .navigation {
+        gap: 60px;
+        display: flex;
+      }
+      }
+
 @media (min-width:320px) and (max-width:481px) {
     .background{
         background-image:url(images/background.png) ;
@@ -1256,6 +1442,51 @@ input{
 }
 .download{
   margin-top: 15px;
+}
+/* ---------------footer */
+.last-info {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  align-items: center;
+  flex-direction: column;
+}
+.last-cont h4 {
+  font-size: 25px;
+  padding-top: 15px;
+}
+.last-cont p {
+  margin-top: 0px;
+  font-size: 19px;
+}
+.vist {
+  height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.vist i {
+  border: 2px solid #ffffff96;
+  width: 27px;
+  border-radius: 15px;
+  text-align: center;
+}
+.navigation ul {
+  font-size: 12px;
+}
+.navigation ul li {
+  list-style: disc;
+}
+.navigation ul li a span {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.navigation {
+  gap: 40px;
+  display: flex;
 }
 }
     
