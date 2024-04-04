@@ -447,6 +447,30 @@ text-align: initial;
   justify-content: center;
   align-content: center;
   margin-top: 40px;
+    
+
+}
+.mb-0{
+    text-align: inherit;
+    font-size: 3rem;
+}
+.row {
+  border-radius: 10px;
+}
+
+.card-text{
+  font-size: 15px;
+}
+.download{
+  margin-top: -80px;
+}
+.download button{
+  height: 50px;
+  width: 140px;
+  font-size: 13px;
+  border-radius: 10px;
+  color: white;
+  background: black;
 }
 
 /* =========== media quary ===============  */
@@ -764,6 +788,17 @@ input{
     margin-top: 50px;
     padding-top: 10px;
   }
+  .mobile{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+      
+  
+  }
+  .download{
+    margin-top: 15px;
+  }
 }
 @media (min-width:481px) and (max-width:768px) {
     .background{
@@ -964,6 +999,18 @@ input{
         margin-right: 80px;
         padding-top: 35px;
         padding-bottom: 20px;
+      }
+      .mobile{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 40px;
+          margin-left: 4px;
+          margin-right: 4px;
+      
+      }
+      .download{
+        margin-top: 15px;
       }
 }
 @media (min-width:320px) and (max-width:481px) {
@@ -1197,6 +1244,18 @@ input{
   margin-right: 80px;
   padding-top: 15px;
   padding-bottom: 20px;
+}
+.mobile{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+.download{
+  margin-top: 15px;
 }
 }
     
