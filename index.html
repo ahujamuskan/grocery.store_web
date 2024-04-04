@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap icons lib -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- link of swipper cards -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+    <!-- font awsm js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/05288b3309.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ===================== navbar -======================  -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"> <i class="bi bi-cart4"></i>Grocery Store</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+            <!-- <div class="cart-2"> -->
+            <a class="liked" href=""><i class="bi bi-suit-heart"></i></a>
+            <a class="tote-bag" href=""><i class="bi bi-handbag"></i></a>
+            <!-- </div> -->
+            <p><img class="user" src="images/Man profile cartoon _ Download on Freepik.jpeg" alt="" width="45px">Hello
+                User</p>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="fill">
+
+        <div class="background">
+
+            <h1 class="tittle">Order Your <br>Daily Groceries</h1>
+            <h3><span>#Free Delivery</span></h3>
+
+            <input type="text" placeholder="find your grocery here" id="site-search" name="q" />
+            <button class="search" type="submit">search</button>
+
+            <!-- <img src="images/background.png" alt=""> -->
+        </div>
+    </div>
+    <!-- -------------------category------------------------ -->
+
+    <div class="catergory">
+        <h1>category</h1>
+        <div class="small">
+            <div class="box">
+                <i id="Fish" class="fa-solid fa-fish"></i><br><b>Fish & Meat</b>
+            </div>
+            <div id="apple" class="box"><i class="fa-solid fa-apple-whole"></i><br><b>Fruits</b></div>
+            <div id="carrot" class="box"><i class="fa-solid fa-dog"></i><br><b>Pets</b></div>
+            <div id="med" class="box"><i class="fa-solid fa-capsules"></i><br><b>Medicine</b></div>
+            <div id="baby" class="box"><i class="fa-solid fa-baby-carriage"></i><br><b>Baby</b></div>
+            <div id="draw" class="box"><i class="fa-solid fa-palette"></i><br><b>stationery</b></div>
+            <div id="plant" class="box"><i class="fa-brands fa-pagelines"></i><br><b>Plants</b></div>
+            <div id="pet" class="box"><i class="fa-solid fa-carrot"></i><br><b>Vegetables</b></div>
+        </div>
+    </div>
+    <!-- -----------------------------cards------------------------------- -->
+    <div class="cards">
+        <h1>Popular Products</h1>
+        <button class="explore" type="button">explore</button>
+    </div>
+    <div class="project" onclick="port">
+        <div class="products-image">
+            <img src="images/vege2.png" alt="">
+            <div class="card-cont">
+                <h3>Cabbage</h3>
+                <p>$5, 1kg</p>
+                <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="count">0</p>
+                <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+            </div>
+        </div>
+        <div class="products-image">
+            <img src="images/cookie.png" alt="">
+            <div class="card-cont">
+                <h3>Cookies</h3>
+                <p>$5, 1kg</p>
+                <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="count">0</p>
+                <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+            </div>
+        </div>
+        <div class="products-image">
+            <img src="images/vege1.png" alt="">
+            <div class="card-cont">
+                <h3>Avcardo</h3>
+                <p>$15, 1kg</p>
+                <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="count">0</p>
+                <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+            </div>
+        </div>
+        <div class="products-image">
+            <img src="images/ice-cream.png" alt="">
+            <div class="card-cont">
+                <h3>Ice-Cream</h3>
+                <p>$10, 1kg</p>
+                <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="count">0</p>
+                <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+            </div>
+        </div>
+        <div class="products-image">
+            <img src="images/pens.png" alt="">
+            <div class="card-cont">
+                <h3>stationery</h3>
+                <p>$2, 4pens</p>
+                <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="count">0</p>
+                <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+            </div>
+        </div>
+        <div class="products-image">
+            <img src="images/vege3.png" alt="">
+            <div class="card-cont">
+                <h3>Potato</h3>
+                <p>$4, 1kg</p>
+                <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                <p class="count">0</p>
+                <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- --------------------------------bundle cards---------------------------------------- -->
+
+
+    <div class="packs">
+        <h1> Bundle Packs</h1>
+        <div class="content" onclick="port">
+            <div class="product-images">
+                <img src="images/pack5.png" alt="">
+                <div class="card-cont">
+                    <h3>Fruit & veggies...</h3>
+                    <p>$5, 1kg</p>
+                    <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                    <p class="count">0</p>
+                    <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                    <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+                </div>
+            </div>
+            <div class="product-images">
+                <img src="images/pack1.png" alt="">
+                <div class="card-cont">
+                    <h3>Medium Box</h3>
+                    <p>$62, 1kg</p>
+                    <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                    <p class="count">0</p>
+                    <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                    <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+                </div>
+            </div>
+            <div class="product-images">
+                <img src="images/pack4.png" alt="">
+                <div class="card-cont">
+                    <h3>Big Pack</h3>
+                    <p>$30, 1kg</p>
+                    <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                    <p class="count">0</p>
+                    <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                    <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+                </div>
+            </div>
+            <div class="product-images">
+                <img src="images/pack2.png" alt="">
+                <div class="card-cont">
+                    <h3>Daal & Oils</h3>
+                    <p>$45, 1kg</p>
+                    <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                    <p class="count">0</p>
+                    <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                    <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+                </div>
+            </div>
+            <div class="product-images">
+                <img src="images/pack3.png" alt="">
+                <div class="card-cont">
+                    <h3>Spices</h3>
+                    <p>$5, 1kg packs</p>
+                    <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                    <p class="count">0</p>
+                    <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                    <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+                </div>
+            </div>
+            <div class="product-images">
+                <img src="images/pack6.png" alt="">
+                <div class="card-cont">
+                    <h3>Bread Packs</h3>
+                    <p>$25, 4packs</p>
+                    <button class="decrement"><i class="fa-solid fa-minus"></i></button>
+                    <p class="count">0</p>
+                    <button class="increment"><i class="fa-solid fa-plus"></i> </button>
+                    <a class="bag2" href=""><i class="bi bi-handbag"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------client reviews------------------------------------ -->
+    <div class="container-1">
+    <div class="container">
+        <H2>client review</H2>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="testimonial-slider" class="owl-carousel">
+                   
+                    <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                        <div class="testimonial-image cell-left">
+                            <img src="images/user-1.jpeg" alt="Rose">
+                        </div>
+                        <div class="cell-right">
+                            <div class="testimonial-name">Rose
+                            </div>
+                            <div class="testimonial-job">Gardener
+                            </div>
+                        </div>
+                        <div class="testimonial-content quote">Exceptional Quality and Selection the grocery store I frequent is a treasure trove of high-quality produce and meats.
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                        <div class="testimonial-image cell-left">
+                            <img src="images/user-2.jpeg" alt="Rose">
+                        </div>
+                        <div class="cell-right">
+                            <div class="testimonial-name">Rose
+                            </div>
+                            <div class="testimonial-job">Gardener
+                            </div>
+                        </div>
+                        <div class="testimonial-content quote">Outstanding Customer Service the staff at this grocery store is always friendly and helpful.  
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                  
+                    <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                        <div class="testimonial-image cell-left">
+                            <img src="images/user-3.jpeg" alt="Rose">
+                        </div>
+                        <div class="cell-right">
+                            <div class="testimonial-name">Rose
+                            </div>
+                            <div class="testimonial-job">Gardener
+                            </div>
+                        </div>
+                        <div class="testimonial-content quote">Convenient and Efficient this grocery store is conveniently located and has an efficient checkout process.
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                        <div class="testimonial-image cell-left">
+                            <img src="images/user-4.jpeg" alt="Rose">
+                        </div>
+                        <div class="cell-right">
+                            <div class="testimonial-name">Rose
+                            </div>
+                            <div class="testimonial-job">Gardener
+                            </div>
+                        </div>
+                        <div class="testimonial-content quote">Community-Focused this grocery store is not just a place to buy groceries;it's a community hub.
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                        <div class="testimonial-image cell-left">
+                            <img src="images/user-5.jpeg" alt="Rose">
+                        </div>
+                        <div class="cell-right">
+                            <div class="testimonial-name">Rose
+                            </div>
+                            <div class="testimonial-job">Gardener
+                            </div>
+                        </div>
+                        <div class="testimonial-content quote">A Great Place for Healthy Living i appreciate the emphasis on healthy living at this grocery store..  
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item equal-height style-6" style="height: 254px;">
+                        <div class="testimonial-image cell-left">
+                            <img src="images/user-6.jpeg" alt="Rose">
+                        </div>
+                        <div class="cell-right">
+                            <div class="testimonial-name">Rose
+                            </div>
+                            <div class="testimonial-job">Gardener
+                            </div>
+                        </div>
+                        <div class="testimonial-content quote">I'm impressed by the grocery store's commitment to sustainability. They offer a variety of eco-friendly products and composting services
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------mobile design------------------------------ -->
+<div class="mobile">
+<div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+        <h3 class="mb-0">Featured post</h3>
+        <div class="mb-1 text-body-secondary">Nov 12</div>
+        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+          Continue reading
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <svg class="bd-placeholder-img" width="200" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
