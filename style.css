@@ -19,8 +19,12 @@ a {
 }
 
 .header {
+  background-color: white;
     border-bottom: 1px solid #E2E8F0;
     width: 100%;
+    position: fixed;
+    /* position: relative; */
+    top: 0px;
 }
 
 .navbar {
@@ -101,7 +105,7 @@ a {
 }
 .tote-bag{
     background-color: #00800029;
-    
+    margin-top: 0px;
     width: 32px;
     text-align: center;
     border-radius: 17px;
@@ -109,8 +113,13 @@ a {
     margin-left: 10px;
     height: 33px;
 }
+.fill{
+    margin-top: 1px;
+    padding-top: 1px;
 
+}
 .background{
+margin-top: 70px;
     background-image:url(images/background.png) ;
     background-size: cover;
     background-position: bottom;
@@ -120,6 +129,9 @@ a {
     margin-left: 45px;
     margin-right: 51px;
     
+}
+.user{
+  margin-top: 5px;
 }
 .tittle{
 
@@ -406,6 +418,13 @@ text-align: initial;
   margin-right: 35px;
   margin-top: 15px;
 }
+
+/* .owl-carousel  .owl-wrapper-outer{
+  display: none;
+  position: absolute;
+  width: 100%;
+  
+} */
 .testimonial-item.equal-height.style-6 {
   background-color: #eee;
   border-radius: 10px;
@@ -563,7 +582,11 @@ line-height: 1.7;
 /* ===========rgba(0, 0, 0, 0.493)a quary ===============  */
 
 @media (min-width:1024px) and (max-width:1250px){
-    .background {
+.fill {
+    margin-top: 18px;
+    padding-top: 30px;
+  }  
+  .background {
         background-image: url(images/background.png);
         /* background-color: #475569; */
         background-size: cover;
@@ -681,7 +704,13 @@ margin-left: 0px;
 }
 
 @media (min-width:768px) and (max-width:1024px){
-    .background{
+  .fill {
+    margin-top: 65px;
+    padding-top: 35px;
+  }
+  .background{
+    margin-top: 55px;
+    /* margin-top: 134px; */
         background-image:url(images/background.png) ;
         /* background-color: #475569; */
         background-size: cover;
@@ -942,7 +971,11 @@ input{
   }
 }
 @media (min-width:481px) and (max-width:768px) {
-    .background{
+  .fill {
+    margin-top: 16px;
+    padding-top: 35px;
+  }
+  .background{
         background-image:url(images/background.png) ;
         /* background-color: #475569; */
         background-size: cover;
@@ -1200,7 +1233,12 @@ input{
       }
 
 @media (min-width:320px) and (max-width:481px) {
-    .background{
+  .fill{
+    margin-top: 26px;
+    padding-top: 9px;
+  }
+  .background{
+      
         background-image:url(images/background.png) ;
         /* background-color: #475569; */
         background-size: cover;
