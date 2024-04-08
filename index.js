@@ -10,8 +10,8 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
 
 const navLink = document.querySelectorAll(".nav-link");
@@ -19,8 +19,8 @@ const navLink = document.querySelectorAll(".nav-link");
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
 }
 
 // ------------------addition------------------substraction------------ 
@@ -50,8 +50,8 @@ function closeMenu() {
 //   updateCount();
 // });
 
- // Function to update count display
- function updateCount(countDisplay, count) {
+// Function to update count display
+function updateCount(countDisplay, count) {
   countDisplay.textContent = count;
 }
 
@@ -63,33 +63,33 @@ const decrementButtons = document.querySelectorAll('.decrement');
 
 // Event listeners for increment and decrement buttons
 incrementButtons.forEach((button, index) => {
-  button.addEventListener('click', function() {
-      counts[index]++;
-      updateCount(countDisplays[index], counts[index]);
+  button.addEventListener('click', function () {
+    counts[index]++;
+    updateCount(countDisplays[index], counts[index]);
   });
 });
 
 decrementButtons.forEach((button, index) => {
-  button.addEventListener('click', function() {
-      // Check if the count is greater than 0 before decrementing
-      if (counts[index] > 0) {
-          counts[index]--;
-          updateCount(countDisplays[index], counts[index]);
-      }
+  button.addEventListener('click', function () {
+    // Check if the count is greater than 0 before decrementing
+    if (counts[index] > 0) {
+      counts[index]--;
+      updateCount(countDisplays[index], counts[index]);
+    }
   });
 });
 
 // -----------------------swipper card-------------------
 
-$(document).ready(function(){
+$(document).ready(function () {
   $("#testimonial-slider").owlCarousel({
-      items:2,
-      itemsDesktop:[1000,2],
-      itemsDesktopSmall:[980,1],
-      itemsTablet:[768,1],
-      pagination:true,
-      navigation:true,
-      navigationText:["<",">"],
-      autoPlay:true
+    items: 2,
+    itemsDesktop: [1000, 2],
+    itemsDesktopSmall: [980, 1],
+    itemsTablet: [768, 1],
+    pagination: true,
+    navigation: true,
+    navigationText: ["<", ">"],
+    autoPlay: true
   });
 });
