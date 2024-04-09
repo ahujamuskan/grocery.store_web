@@ -5,9 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #0b802f;
-}
+
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -22,7 +20,7 @@ a {
 }
 
 .header {
-  background-color: white;
+  background-color: rgb(224, 28, 28);
   border-bottom: 1px solid #E2E8F0;
   width: 100%;
   position: fixed;
