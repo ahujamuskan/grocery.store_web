@@ -53,6 +53,7 @@ a {
 }
 
 .nav-menu {
+  margin-left: -75px;
   margin-top: 7px;
   display: flex;
   justify-content: center;
@@ -62,6 +63,7 @@ a {
 .nav-item {
   margin-left: 5rem;
   color: green;
+
 }
 
 .nav-link {
@@ -97,7 +99,7 @@ a {
   text-align: center;
   border-radius: 15px;
   color: red;
-  margin-left: 535px;
+  margin-left: 480px;
   /* box-shadow: 10px 10px 20px red inset -10px -10px 20px rgb(253, 0, 0); */
 }
 
@@ -108,6 +110,8 @@ a {
 .tote-bag:hover {
   border: 2px solid green;
 }
+
+
 
 .tote-bag {
   background-color: #00800029;
@@ -141,6 +145,7 @@ a {
 
 .user {
   margin-top: 5px;
+  margin-left: 10px;
 }
 
 .tittle {
@@ -390,6 +395,30 @@ input {
   background-color: #0b802e71;
   color: darkgreen;
 }
+
+/* span {
+  margin-left: -3px;
+  position: absolute;
+  margin-top: -13px;
+  border-radius: 14px;
+  
+} */
+.add {
+  font-size: 13px;
+  border: 1px solid #ff00005c;
+  background: #ff00004f;
+  height: 23px;
+  width: 22px;
+  text-align: center;
+  color: white;
+  display: block;
+  margin-left: 258px;
+  margin-top: -42px;
+  border-radius: 15px;
+}
+
+
+
 
 .packs {
   background-color: rgba(4, 130, 4, 0.295);
@@ -788,11 +817,24 @@ input {
     margin-left: 0px;
   }
 
+  .add {
+    font-size: 13px;
+    border: 1px solid #ff00005c;
+    background: #ff00004f;
+    height: 23px;
+    width: 22px;
+    text-align: center;
+    color: white;
+    display: block;
+    margin-left: 153px;
+    margin-top: -47px;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width:768px) and (max-width:1024px) {
   .fill {
-    margin-top: 65px;
+    margin-top: 29px;
     padding-top: 35px;
   }
 
@@ -1092,11 +1134,25 @@ input {
     gap: 100px;
     display: flex;
   }
+
+  .add {
+    font-size: 13px;
+    border: 1px solid #ff00005c;
+    background: #ff00004f;
+    height: 23px;
+    width: 22px;
+    text-align: center;
+    color: white;
+    display: block;
+    margin-left: 152px;
+    margin-top: -47px;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width:481px) and (max-width:768px) {
   .fill {
-    margin-top: 16px;
+    margin-top: -32px;
     padding-top: 35px;
   }
 
@@ -1391,11 +1447,25 @@ input {
     gap: 60px;
     display: flex;
   }
+
+  .add {
+    font-size: 13px;
+    border: 1px solid #ff00005c;
+    background: #ff00004f;
+    height: 23px;
+    width: 22px;
+    text-align: center;
+    color: white;
+    display: block;
+    margin-left: 143px;
+    margin-top: -47px;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width:320px) and (max-width:481px) {
   .fill {
-    margin-top: 26px;
+    margin-top: -6px;
     padding-top: 9px;
   }
 
@@ -1726,6 +1796,20 @@ input {
   .navigation {
     gap: 40px;
     display: flex;
+  }
+
+  .add {
+    font-size: 12px;
+    border: 1px solid #ff00005c;
+    background: #ff00004f;
+    height: 20px;
+    width: 17px;
+    text-align: center;
+    color: white;
+    display: block;
+    margin-left: 113px;
+    margin-top: -42px;
+    border-radius: 15px;
   }
 }
 

@@ -50,35 +50,35 @@ function closeMenu() {
 //   updateCount();
 // });
 
-// Function to update count display
+// Function to update count display ................
 function updateCount(countDisplay, count) {
   countDisplay.textContent = count;
 }
 
 // Initialize counts for each card
-const counts = Array(12).fill(0);
-const countDisplays = document.querySelectorAll('.count');
-const incrementButtons = document.querySelectorAll('.increment');
-const decrementButtons = document.querySelectorAll('.decrement');
+// const counts = Array(12).fill(0);
+// const countDisplays = document.querySelectorAll('.count');
+// const incrementButtons = document.querySelectorAll('.increment');
+// const decrementButtons = document.querySelectorAll('.decrement');
 
-// Event listeners for increment and decrement buttons
-incrementButtons.forEach((button, index) => {
-  button.addEventListener('click', function () {
-    counts[index]++;
-    updateCount(countDisplays[index], counts[index]);
-  });
-});
+// // Event listeners for increment and decrement buttons
+// incrementButtons.forEach((button, index) => {
+//   button.addEventListener('click', function () {
+//     counts[index]++;
+//     updateCount(countDisplays[index], counts[index]);
+//   });
+// });
 
-decrementButtons.forEach((button, index) => {
-  button.addEventListener('click', function () {
-    // Check if the count is greater than 0 before decrementing
-    if (counts[index] > 0) {
-      counts[index]--;
-      updateCount(countDisplays[index], counts[index]);
-    }
-  });
-});
-
+// decrementButtons.forEach((button, index) => {
+//   button.addEventListener('click', function () {
+//     // Check if the count is greater than 0 before decrementing
+//     if (counts[index] > 0) {
+//       counts[index]--;
+//       updateCount(countDisplays[index], counts[index]);
+//     }
+//   });
+// });
+// .....................closeMenu.....
 // -----------------------swipper card-------------------
 
 $(document).ready(function () {
@@ -91,5 +91,40 @@ $(document).ready(function () {
     navigation: true,
     navigationText: ["<", ">"],
     autoPlay: true
+  });
+});
+
+
+// add to cart
+document.addEventListener('DOMContentLoaded', function () {
+  // Select all increment buttons
+  const incrementButtons = document.querySelectorAll('.increment');
+  // Select all decrement buttons
+  const decrementButtons = document.querySelectorAll('.decrement');
+
+  // Function to update the count and the bag2 span
+  function updateCountAndBag(button, increment) {
+    // Find the count element
+    const countElement = button.parentElement.querySelector('.count');
+    // Find the bag2 span
+    const bag2Span = button.closest('.card-cont').querySelector('.add');
+    // Get the current count
+    let count = parseInt(countElement.textContent, 10);
+    // Update the count
+    count = increment ? count + 1 : Math.max(count - 1, 0);
+    // Update the count element's text content
+    countElement.textContent = count;
+    // Update the bag2 span's text content
+    bag2Span.textContent = count;
+  }
+
+  // Add event listeners to increment buttons
+  incrementButtons.forEach(button => {
+    button.addEventListener('click', () => updateCountAndBag(button, true));
+  });
+
+  // Add event listeners to decrement buttons
+  decrementButtons.forEach(button => {
+    button.addEventListener('click', () => updateCountAndBag(button, false));
   });
 });
