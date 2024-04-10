@@ -26,6 +26,7 @@ a {
   position: fixed;
   /* position: relative; */
   top: 0px;
+  z-index: 1000;
 }
 
 .navbar {
@@ -468,7 +469,7 @@ input {
 }
 
 /* -------------------------client review css---------------------- */
-.container-1 {
+#container-1 {
   background-color: #8080806e;
 
   max-width: 100%;
@@ -543,7 +544,7 @@ input {
   border: #ff8f00;
 }
 
-.mobile {
+#mobile {
   display: flex;
   justify-content: center;
   align-content: center;
