@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to update the count and the bag2 span
   function updateCountAndBag(button, increment) {
     // Find the count element
-    const countElement = button.parentElement.querySelector('.count');
+    const countElement = button.parentElement.querySelector('.add');
     // Find the bag2 span
-    const bag2Span = button.closest('.card-cont').querySelector('.add');
+    const bag2Span = button.querySelector('.add');
     // Get the current count
     let count = parseInt(countElement.textContent, 10);
     // Update the count

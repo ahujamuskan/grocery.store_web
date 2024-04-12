@@ -158,7 +158,7 @@ a {
 }
 
 h3 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 h3 span {
@@ -170,7 +170,7 @@ h3 span {
   color: #0b802f;
 }
 
-#site-search {
+/* #site-search {
   margin-left: 205px;
   height: 40px;
   width: 465px;
@@ -178,7 +178,7 @@ h3 span {
   margin-top: 30px;
   font-size: 17px;
   border: 2px solid green;
-}
+} */
 
 input {
   text-align: start;
@@ -187,17 +187,23 @@ input {
 }
 
 .search {
+  margin-top: 20px;
   color: white;
   cursor: pointer;
-  width: 100px;
+  width: 120px;
   height: 40px;
   border-radius: 30px;
-  margin-left: -103px;
+  margin-left: 207px;
   background-color: #40aa54;
   border: white;
   font-size: 19px;
 }
+.search a{
+    
+  color: white;
+  text-decoration: none;
 
+}
 .search:hover {
   background-color: #0b802f;
 }
@@ -335,7 +341,7 @@ input {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.022em;
-  margin-left: 145px;
+  margin-left: 170px;
 }
 
 .count {
@@ -421,7 +427,7 @@ input {
 
 
 
-.packs {
+#packs {
   background-color: rgba(4, 130, 4, 0.295);
   font-weight: 500;
   border-radius: 20px;
@@ -429,7 +435,7 @@ input {
   margin-right: 170px;
 }
 
-.packs h1 {
+#packs h1 {
   font-weight: 600;
   padding-top: 20px;
   margin-left: 30px;
@@ -707,6 +713,20 @@ input {
     font-weight: 600;
   }
 
+  .search {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 209px;
+    background-color: #40aa54;
+    border: white;
+
+  }
+  
+
   input {
     text-align: start;
     padding-left: 15px;
@@ -780,16 +800,16 @@ input {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.022em;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
-  .packs {
+  #packs {
     background-color: rgba(4, 130, 4, 0.295);
     margin: 5px;
     border-radius: 10px;
   }
 
-  .packs h1 {
+  #packs h1 {
     font-weight: 600;
     text-align: center;
     padding-top: 10px;
@@ -827,7 +847,7 @@ input {
     text-align: center;
     color: white;
     display: block;
-    margin-left: 153px;
+    margin-left: 185px;
     margin-top: -47px;
     border-radius: 15px;
   }
@@ -873,15 +893,6 @@ input {
   }
 
 
-  #site-search {
-    margin-left: 135px;
-    height: 40px;
-    width: 465px;
-    border-radius: 30px;
-    margin-top: 10px;
-    font-size: 17px;
-    border: 2px solid green;
-  }
 
   input {
     text-align: start;
@@ -895,6 +906,19 @@ input {
     text-align: center;
     border-radius: 10px;
     font-size: 12px;
+  }
+
+  .search {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 144px;
+    background-color: #40aa54;
+    border: white;
+
   }
 
   .small {
@@ -980,13 +1004,13 @@ input {
   }
 
   /* bundle pack css queries */
-  .packs {
+  #packs {
     background-color: rgba(4, 130, 4, 0.295);
     margin: 5px;
     border-radius: 10px;
   }
 
-  .packs h1 {
+  #packs h1 {
     font-weight: 600;
     text-align: center;
     padding-top: 10px;
@@ -1045,7 +1069,7 @@ input {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.022em;
-    margin-left: 40px;
+    margin-left: 80px;
   }
 
   .card-cont h3 {
@@ -1145,7 +1169,7 @@ input {
     text-align: center;
     color: white;
     display: block;
-    margin-left: 152px;
+    margin-left: 165px;
     margin-top: -47px;
     border-radius: 15px;
   }
@@ -1192,16 +1216,7 @@ input {
     color: #0b802f;
   }
 
-  #site-search {
-    margin-left: 45px;
-    height: 40px;
-    width: 295px;
-    border-radius: 30px;
-    margin-top: 30px;
-    font-size: 15px;
-    border: 2px solid green;
 
-  }
 
   input {
     text-align: start;
@@ -1216,6 +1231,19 @@ input {
     border-radius: 15px;
     color: red;
     margin-left: 366px;
+  }
+
+  .search {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 51px;
+    background-color: #40aa54;
+    border: white;
+    /* font-size: 19px; */
   }
 
   .search {
@@ -1322,7 +1350,7 @@ input {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.022em;
-    margin-left: 40px;
+    margin-left: 55px;
   }
 
   /* bundle packs css queries */
@@ -1345,13 +1373,13 @@ input {
     margin-top: 15px;
   }
 
-  .packs {
+  #packs {
     background-color: rgba(4, 130, 4, 0.295);
     margin: 5px;
     border-radius: 10px;
   }
 
-  .packs h1 {
+  #packs h1 {
     font-weight: 600;
     text-align: center;
     padding-top: 10px;
@@ -1506,15 +1534,7 @@ input {
     color: #0b802f;
   }
 
-  #site-search {
-    margin-left: 20px;
-    height: 30px;
-    width: 227px;
-    border-radius: 30px;
-    margin-top: 30px;
-    font-size: 14px;
-    border: 2px solid green;
-  }
+
 
   .search {
     color: white;
@@ -1522,10 +1542,10 @@ input {
     width: 65px;
     height: 30px;
     border-radius: 30px;
-    margin-left: -69px;
+    margin-left: 31px;
     background-color: #40aa54;
     border: white;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   input {
@@ -1586,13 +1606,13 @@ input {
   .explore {
     color: white;
     cursor: pointer;
-    width: 100px;
+    width: 75px;
     height: 40px;
-    border-radius: 30px;
-    margin-left: -17px;
+    border-radius: 26px;
+    margin-left: -62px;
     background-color: #40aa54;
     border: white;
-    font-size: 17px;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -1670,18 +1690,18 @@ input {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.022em;
-    margin-left: 10px;
+    margin-left: 25px;
   }
 
   /* bundle packs quer */
 
-  .packs {
+  #packs {
     background-color: rgba(4, 130, 4, 0.295);
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .packs h1 {
+  #packs h1 {
     padding-top: 10px;
     text-align: center;
     font-weight: 500px;
